@@ -262,7 +262,6 @@ app.delete('/api/Clientes/:id',(req,res)=>{
 
 //itensPedidos
 
-
 app.post('/api/ItensPedido',(req,res)=>{
     const {id_pedido,id_produto,quantidade,preco_unitario} = req.body;
     const SQL = "INSERT INTO ItensPedido(id_pedido,id_produto,quantidade,preco_unitario) VALUES(?,?,?,?)";
