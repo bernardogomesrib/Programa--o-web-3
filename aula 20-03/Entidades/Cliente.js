@@ -20,5 +20,5 @@ const Clientes = sequelize.define('Clientes',{
     telefone:{
         type: DataTypes.STRING(20),allowNull:false
     }
-}
-)
+})
+module.exports = Clientes;

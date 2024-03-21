@@ -1,6 +1,8 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require('../Conexao/db');
 const Categoria = require('./Categoria');
+const Cliente = require('./Cliente')
+const ItensPedido = require('./ItensPedido')
 const ProdutoCategoria = require('./ProdutoCategoria');
 const Produto = sequelize.define('Produto',{
     id:{
@@ -36,6 +38,15 @@ Produto.belongsToMany(Categoria, {
 Categoria.belongsToMany(Produto, {
     through: ProdutoCategoria,
     foreignKey: 'categoriaId'
+});
+
+Produto.belongsToMany(Cliente, {
+    through: ItensPedido,
+    foreignKey: 'produtoId'
+});
+Cliente.belongsToMany(Produto, {
+    through: ItensPedido,
+    foreignKey: 'clienteId'
 });
 module.exports = Produto;
 

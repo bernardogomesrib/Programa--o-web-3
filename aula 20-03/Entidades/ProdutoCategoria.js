@@ -10,10 +10,6 @@ const ProdutoCategoria = sequelize.define('ProdutoCategoria', {
     categoriaId: {
         type: DataTypes.BIGINT,
         allowNull: false
-    },
-    outrasColunas: {
-        type: DataTypes.STRING, // Defina o tipo adequado para suas colunas adicionais
-        allowNull: true
     }
 });
 
