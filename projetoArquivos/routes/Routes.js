@@ -3,7 +3,8 @@ const router = express.Router();
 
 const AnswerControl = require('../controllers/AnswerControl');
 const BoardControl = require('../controllers/BoardControl');
-
+const ThreadControl = require('../controllers/ThreadControl')
+const UserControl = require('../controllers/UserControl')
 
 //answer
 router.get('/respostas/',AnswerControl.getAll);
@@ -19,6 +20,19 @@ router.post('/boards/',BoardControl.save);
 router.put('/boards/',BoardControl.update);
 router.delete('/boards/',BoardControl.delete);
 
+//Thread
+router.get('/threads/',ThreadControl.getAll);
+router.get('/threads/:id',ThreadControl.getById);
+router.post('/threads/',ThreadControl.save);
+router.put('/threads/',ThreadControl.update);
+router.delete('/threads/',ThreadControl.delete);
+
+//User
+router.get('/users/',UserControl.getAll);
+router.get('/users/:id',UserControl.getById);
+router.post('/users/',UserControl.save);
+router.put('/users/',UserControl.update);
+router.delete('/users/',UserControl.delete);
 
 
 module.exports = router;
