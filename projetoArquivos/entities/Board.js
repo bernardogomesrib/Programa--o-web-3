@@ -34,33 +34,4 @@ User.hasMany(Answer, { foreignKey: 'userId' }); // Um usuário pode ter muitas r
 Answer.belongsTo(User, { foreignKey: 'userId' }); // Uma resposta pertence a um usuário
 
 // Exportar os modelos
-module.exports = {
-    Board,
-    Threadd,
-    Answer,
-    User
-};
-
-/**
-
-Produto.belongsToMany(Categoria, {
-    through: ProdutoCategoria,
-    foreignKey: 'produtoId'
-});
-Categoria.belongsToMany(Produto, {
-    through: ProdutoCategoria,
-    foreignKey: 'categoriaId'
-});
-
-Produto.belongsToMany(Cliente, {
-    through: ItensPedido,
-    foreignKey: 'produtoId'
-});
-Cliente.belongsToMany(Produto, {
-    through: ItensPedido,
-    foreignKey: 'clienteId'
-});
-module.exports = Produto;
-
-
- */
+module.exports = Board;
