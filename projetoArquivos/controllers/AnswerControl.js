@@ -19,6 +19,9 @@ const AnswerControl = {
             res.status(500).json({error: 'Erro ao procurar resposta - '+error.message})
         }
     },
+
+    //arquivo nesta função
+    
     async save(req,res){
         const {mensagem,arquivo} = req.body;
         const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
@@ -37,6 +40,8 @@ const AnswerControl = {
             })
         }
     },
+
+    //arquivo nesta função
     async update(req,res){
         const{id,mensagem,arquivo}= req.body
         const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
