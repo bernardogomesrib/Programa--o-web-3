@@ -13,6 +13,10 @@ const User = sequelize.define('user',{
     ultimoIp:{
         type: DataTypes.STRING(135),
         allowNull: false
+    },
+    password:{
+        type: DataTypes.STRING,
+        allowNull:false
     }
     
 })

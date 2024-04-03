@@ -15,7 +15,9 @@ const UserControl = {
     async getById(req,res){
         const {id} = req.params;
         try {
-            return res.json(await User.findByPk(id));
+            const UserInstance = await User.findByPk(id);
+            UserInstance.password = "";
+            return res.json(UserInstance);
         } catch (error) {
             res.status(500).json({error: 'Erro ao procurar User - '+error.message})
         }
