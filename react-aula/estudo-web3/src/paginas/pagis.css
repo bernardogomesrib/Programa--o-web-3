@@ -1,0 +1,65 @@
+.fullBackground{
+    
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../../public/cardapio.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      
+}
+.fullBackground2{
+    
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/oespaco.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
+.fullBackground3{
+    
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/pratosda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
+.fullBackground4{
+    
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/FAQ.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
+.fullBackground5{
+    
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/SOBRE.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
