@@ -1,15 +1,30 @@
+.max{
+    max-width: 95vw;
+}
+html{
+    width:100vw;
+    height: 100vh;
+    background-color:rgb(205,207,192)
+}
+body{
+    background-color:rgb(205,207,192)
+}
 .fullBackground{
-    
+    background-color:rgb(205,207,192);
         text-align: center;
         width: 100vw;
         height: 100vh;
-        background-image: url('../../public/cardapio.png');
+        
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         justify-content: flex-end;
         align-items: center;
       
+}
+.max-width{
+    max-width: 99vw;
+    margin: 0 auto;
 }
 .fullBackground2{
     
@@ -24,6 +39,10 @@
     align-items: center;
   
 }
+.max-width{
+    max-width: 99vw;
+    margin: 0 auto;
+}
 .fullBackground3{
     
     text-align: center;
@@ -37,6 +56,10 @@
     align-items: center;
   
 }
+.max-width{
+    max-width: 99vw;
+    margin: 0 auto;
+}
 .fullBackground4{
     
     text-align: center;
@@ -49,6 +72,10 @@
     justify-content: flex-end;
     align-items: center;
   
+}
+.max-width{
+    max-width: 99vw;
+    margin: 0 auto;
 }
 .fullBackground5{
     
