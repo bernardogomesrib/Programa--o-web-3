@@ -1,0 +1,75 @@
+{
+  "pessoas": [
+    {
+      "id": "1",
+      "nome": "João",
+      "idade": 25,
+      "senha": "123"
+    },
+    {
+      "id": "2",
+      "nome": "Maria",
+      "idade": 30,
+      "senha": "123"
+    },
+    {
+      "id": "3",
+      "nome": "José",
+      "idade": 40,
+      "senha": "123"
+    },
+    {
+      "id": "4",
+      "nome": "Ana",
+      "idade": 35,
+      "senha": "123"
+    },
+    {
+      "id": "5",
+      "nome": "Pedro",
+      "idade": 20,
+      "senha": "123"
+    },
+    {
+      "id": "966e",
+      "nome": "humano",
+      "idade": 69,
+      "senha": "123"
+    }
+  ],
+  "animais": [
+    {
+      "id": "1",
+      "nome": "Rex",
+      "especie": "Cachorro"
+    },
+    {
+      "id": "2",
+      "nome": "Mingau",
+      "especie": "Gato"
+    },
+    {
+      "id": "3",
+      "nome": "Piu",
+      "especie": "Passarinho"
+    },
+    {
+      "id": "4",
+      "nome": "Dino",
+      "especie": "Dinossauro"
+    },
+    {
+      "id": "5",
+      "nome": "Nemo",
+      "especie": "Peixe"
+    }
+  ],
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "João",
+      "telefone": "123456789",
+      "email": "email@email.com"
+    }
+  ]
+}
