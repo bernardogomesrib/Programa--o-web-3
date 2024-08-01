@@ -1,7 +1,4 @@
 import {
-  CCol,
-  CContainer,
-  CRow,
   CTable,
   CTableBody,
   CTableDataCell,
@@ -23,13 +20,16 @@ const Contacts = () => {
         const urlParams = new URLSearchParams(window.location.search);
         const idParam = urlParams.get("id");
         const nomeParam = urlParams.get("nome");
+        if(!idParam || !nomeParam){
+          window.location.href = `http://localhost:3001/`;
+        }
 
         setId(idParam);
         setNome(nomeParam);
-
         const response = await fetch("http://localhost:3000/contatos");
         const data = await response.json();
         setContacts(data);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching contacts:", error);
       }
@@ -39,22 +39,17 @@ const Contacts = () => {
   }, []);
 
   return (
-    <CContainer>
-      <CRow>
-        <CCol sm className="localAlignCenter localJustifyEvenly">
-          <img src="logo512.png" alt="Logo" className="logo" />
-        </CCol>
-        <CCol sm className="localAlignCenter localAlignContentCenter localWrap localJustifyCenter">
+
           
+          <div className="logo">
+          <h1 className="w-full text-align-center localAlignCenter">contacts</h1>
+          <CTable className="logo">
           
-          
-          <p className="w-full localAlignCenter">contacts</p>
-          <CTable>
           <CTableHead >
           <CTableHeaderCell scope="col"></CTableHeaderCell>
           <CTableHeaderCell scope="col">{nome}</CTableHeaderCell>
           <CTableHeaderCell scope="col"></CTableHeaderCell>
-          <CTableHeaderCell className="localFlex localJustifyEnd" color="light" scope="col"><a href="/contactsAdd">+</a></CTableHeaderCell></CTableHead>
+          <CTableHeaderCell className="localFlex localJustifyEnd" color="light" scope="col"><a href={`/contactsAdd?id=${id}&nome=${nome}`}>+</a></CTableHeaderCell></CTableHead>
             <CTableHead>
               <CTableRow>
                 <CTableHeaderCell scope="col">#</CTableHeaderCell>
@@ -74,9 +69,8 @@ const Contacts = () => {
               ))}
             </CTableBody>
           </CTable>
-        </CCol>
-      </CRow>
-    </CContainer>
+        
+        </div>
   );
 };
 

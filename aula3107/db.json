@@ -67,9 +67,21 @@
   "contatos": [
     {
       "id": "1",
-      "nome": "João",
-      "telefone": "123456789",
+      "nome": "zé ",
+      "telefone": "73y17283",
+      "email": "jao@email.com"
+    },
+    {
+      "id": "3fc9",
+      "nome": "não é maconha",
+      "telefone": "123123",
       "email": "email@email.com"
+    },
+    {
+      "id": "2e24",
+      "nome": "côco",
+      "telefone": "12373637",
+      "email": "mei@mail.com"
     }
   ]
 }

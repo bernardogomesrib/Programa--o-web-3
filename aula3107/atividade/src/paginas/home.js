@@ -1,5 +1,5 @@
 'use client';
-import { CButton, CCol, CContainer, CForm, CFormInput, CRow } from "@coreui/react";
+import { CButton, CForm, CFormInput } from "@coreui/react";
 import React from 'react';
 import './css.css';
 const Home = () => {
@@ -19,22 +19,15 @@ const Home = () => {
         
     }
     return (
-        <CContainer>
-            <CRow>
-                <CCol sm className="localAlignCenter localAlignSpaceEvenly localJustifyEvenly">
-                    <img src="logo512.png" alt="Logo" className="logo"/>
-                </CCol>
-                <CCol sm className="localAlignCenter localAlignSpaceEvenly">
-                    <CForm className="localAlignCenter localFlexColumn w-350 localAlignSpaceEvenly gap-2" onSubmit={logar}>
+       
+                    <CForm className="  localAlignCenter localFlexColumn w-350 localAlignSpaceEvenly gap-2 localJustifyCenter" onSubmit={logar}>
                         <h1>Login</h1>
                         <CFormInput className="w-full" type="text" placeholder="Login" />
                         <CFormInput className="w-full" type="password" placeholder="Senha" />
                         <CButton className="w-full" type="submit" style={{ backgroundColor: 'blue', color: 'white' }}>Acessar</CButton>
                         <CButton className="w-full" style={{ backgroundColor: 'red', color: 'white' }}>Cadastre-se</CButton>
                     </CForm>
-                </CCol>
-            </CRow>
-        </CContainer>
+
     );
 };
 
