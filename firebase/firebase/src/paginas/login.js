@@ -8,6 +8,7 @@ const LoginPage = () => {
   
   const handleLogin = async (e) => {
     e.preventDefault();
+    console.log(process.env.REACT_APP_APIKEY);
     try {
       const auth = getAuth();
       await signInWithEmailAndPassword(auth, email, password)

@@ -20,16 +20,17 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCNdoePU3qe56vxXK5c3h1zEf4f-vgUGrE",
-  authDomain: "fir-aula-886d8.firebaseapp.com",
-  projectId: "fir-aula-886d8",
-  storageBucket: "fir-aula-886d8.appspot.com",
-  messagingSenderId: "137154513981",
-  appId: "1:137154513981:web:46139db6f6d2f20109ae54",
-  measurementId: "G-BGHEGTFM50",
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 // Initialize Firebase
+// eslint-disable-next-line no-unused-vars
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);
 

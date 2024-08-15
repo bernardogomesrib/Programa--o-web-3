@@ -15,6 +15,16 @@ export default function Home() {
             {key.toString()}: {value.toString()}
           </p>
         ))}
+        <h1>Informações do usuário</h1>
+        {Object.entries(user.providerData).map(([key, value]) => (
+          <p key={key.toString()}>
+            {key.toString()}: {Object.entries(value).map(([key, value]) => (
+              <p key={key}>
+                {key}: {value}
+              </p>
+            ))}
+          </p>
+        ))}
         <button
           onClick={() => {
             const auth = getAuth();
